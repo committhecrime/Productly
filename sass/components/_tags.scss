@@ -1,0 +1,25 @@
+.tags {
+  display: flex;
+  >*:not(:last-child){
+    margin-right: 7px;
+  }
+}
+
+.tag {
+  padding: 0 14px;
+  @include font (1.3rem, 2.8rem, 400);
+  border-radius: 90px;
+  cursor: pointer;
+  &_selected {
+    background: $color-primary;
+    color: $color-light;
+  }
+  &_bordered {
+    border: 1px solid $color-border;
+  }
+  &_colored {
+    background: $color-tag;
+    color: $color-text;
+  }
+}
+

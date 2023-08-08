@@ -1,0 +1,95 @@
+.contact-us {
+  background-color: $color-background;
+  padding: 62px 0 82px;
+}
+
+.contact-us__content {
+  @include media-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.contact-us__title { 
+  margin: 0 0 17px 0;
+  @include media-tablet {
+    text-align: center;
+  }
+}
+
+.contact-us__form {
+  input, textarea {
+    @extend %font-primary;
+    border: 1px solid $color-light;
+    background: $color-light;
+    padding: 10px 21px;
+    border-radius: 5px;
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+      
+    }
+  }
+  textarea {
+    resize: none;
+    height: 160px;
+    width: 100%;
+  }
+
+}
+
+.contact-us__line {
+  margin: 0 0 19px 0;
+  @include media-mobile {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.contact-us_button {
+  >* {
+    min-width: 117px;
+  }
+  @include media-tablet {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contact-us__text {
+  @include font (1.6rem, 2.6rem, 400);
+  max-width: 526px;
+  margin:0 0 33px 0;
+  @include media-tablet {
+    text-align: center;
+    margin:0 0 26px 0;
+  }
+}
+
+.contact-us__link {
+  @extend %font-primary;
+  @include font (2.5rem, 2.6rem, 400);
+  color: $color-text;
+  text-decoration: none;
+}
+
+.contact-us__link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin: 0 0 19px 0;
+}
+
+.contact-us__link-wrapper:last-of-type {
+  @include media-tablet {
+    margin: 0 0 54px 0;
+  }
+}
+
+.contact-us-wrapper {
+  @include media-tablet {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,8 @@
+.logo {
+  display: flex;
+  @include media-mobile
+}
+
+.logo__object {
+  width: 160px;
+}
