@@ -54,6 +54,9 @@
         object-fit: cover;
       }
     }
+  &_hidden {
+    display: none;
+  }  
 }
 
 .strategy__content {
